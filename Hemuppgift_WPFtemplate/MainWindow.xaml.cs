@@ -12,5 +12,26 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void BtnGrid_Click(object sender, RoutedEventArgs e)
+        {
+            WindowGrid newWindow = new WindowGrid();
+            newWindow.Show();
+        }
+
+        private void BtnStackPanel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnWrapPanel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDockPanel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
