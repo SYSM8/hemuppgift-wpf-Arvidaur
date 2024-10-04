@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
-        Title="WindowDockPanel" Height="450" Width="800">
-    <DockPanel>
+        Title="WindowDockPanel" x:Name="windowDockPanel" Height="450" Width="800">
+    <DockPanel LastChildFill="False">
 
-        <Button x:Name="BtnTop" Content="Top" DockPanel.Dock="Top" HorizontalAlignment="Center" Width="80" Height="30" Margin="0,5"/>
-        <Button x:Name="BtnRight" Content="Right" DockPanel.Dock="Right" VerticalAlignment="Center" Width="80" Height="30" Margin="5,0"/>
-        <Button x:Name="BtnBottom" Content="Bottom" DockPanel.Dock="Bottom" HorizontalAlignment="Center" Width="80" Height="30" Margin="0,5"/>
-        <Button x:Name="BtnLeft" Content="Left" DockPanel.Dock="Left" VerticalAlignment="Center" Width="80" Height="30" Margin="5,0"/>
-        <Button x:Name="BtnCenter" Content="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Width="80" Height="30" Click="BtnCenter_Click"/>
+        <Button x:Name="BtnTop" Content="Top" DockPanel.Dock="Top" Width="80" Height="30" Margin="0,5"/>
+        <Button x:Name="BtnBottom" Content="Bottom" DockPanel.Dock="Bottom"  Width="80" Height="30" Margin="0,5" />
+        
+        <Button x:Name="BtnLeft" Content="Left" DockPanel.Dock="Left" Width="80" Height="30" Margin="5,0"/>
+        <Button x:Name="BtnRight" Content="Right" DockPanel.Dock="Right" Width="80" Height="30" Margin="5,0"/>
 
-        <Image x:Name="ImgTrophy"/>
+        <DockPanel Width="620">
+            <Image x:Name="ImgTrophy" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="BtnCenter" Content="Center" Width="80" Height="30" Click="BtnCenter_Click"/>
+        </DockPanel>
     </DockPanel>
 </Window>
