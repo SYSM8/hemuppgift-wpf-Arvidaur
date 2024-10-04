@@ -27,12 +27,14 @@ namespace Hemuppgift_WPFtemplate
 
         private void BtnWrapPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowWrapPanel newWindow = new WindowWrapPanel();
+            newWindow.Show();
         }
 
         private void BtnDockPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowDockPanel newWindow = new WindowDockPanel();
+            newWindow.Show();
         }
     }
 }
