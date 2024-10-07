@@ -14,9 +14,9 @@
         <Button x:Name="BtnLeft" Content="Left" DockPanel.Dock="Left" Width="80" Height="30" Margin="5,0"/>
         <Button x:Name="BtnRight" Content="Right" DockPanel.Dock="Right" Width="80" Height="30" Margin="5,0"/>
 
-        <DockPanel Width="620">
-            <Image x:Name="ImgTrophy" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Width="620">
+            <Image x:Name="ImgTrophy"/>
             <Button x:Name="BtnCenter" Content="Center" Width="80" Height="30" Click="BtnCenter_Click"/>
-        </DockPanel>
+        </Grid>
     </DockPanel>
 </Window>
